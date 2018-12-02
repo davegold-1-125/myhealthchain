@@ -4,7 +4,7 @@ contract Patients{
     
     // string [] patient;
     string [] records;
-    
+
     function AddRecord(string entry){
         records.push(entry);
     }
@@ -39,8 +39,14 @@ contract Patients{
     }
     
     function getLength() constant returns (uint){
-        
         return records.length;
         //return records[j];
     }
+
+    function TESTgetLength() constant returns (uint){
+        TestArray();
+        return records.length;
+        //return records[j];
+    }
+    
 }    
